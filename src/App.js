@@ -1,18 +1,12 @@
 import React from "react";
-import { UseRoutes } from "./routes";
-import { BrowserRouter } from "react-router-dom";
-import { NavBar } from "./components/NavBar";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Nav } from "./Nav";
 
 function App() {
-  const routes = UseRoutes();
   return (
-    <BrowserRouter>
-      <div>
-        <NavBar />
-
-        {routes}
-      </div>
-    </BrowserRouter>
+    <Router>
+      <Nav />
+    </Router>
   );
 }
 

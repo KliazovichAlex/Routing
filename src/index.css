@@ -1,37 +1,13 @@
-.big {
+.figure1 {
+  width: 200px;
   height: 200px;
-  width: 200px;
-  background-color: red;
-  margin-bottom: 10px;
-}
-.mid {
-  height: 100px;
-  width: 100px;
-  background-color: red;
-  margin-bottom: 10px;
-}
-.small {
-  height: 50px;
-  width: 50px;
-  background-color: red;
-  margin-bottom: 10px;
-}
-
-.text-style {
-  font-style: italic;
-}
-
-.user {
-  width: 250px;
-  height: 150px;
-  border: 1px solid black;
+  background-color: tomato;
   text-align: center;
-  margin: 0 auto;
 }
-
-.users {
-  border: 1px solid black;
+.figure2 {
   text-align: center;
   width: 200px;
-  margin: 0 auto;
+  height: 200px;
+  border-radius: 50%;
+  background-color: tomato;
 }
