@@ -11,14 +11,17 @@ export const Nav = () => {
     setFigure(2);
   };
   const colorRed = () => {
+    console.log(color);
     setColor("red");
     console.log(color);
   };
   const colorBlue = () => {
+    console.log(color);
     setColor("blue");
     console.log(color);
   };
   const colorGreen = () => {
+    console.log(color);
     setColor("green");
     console.log(color);
   };
@@ -58,8 +61,7 @@ export const Nav = () => {
       </div>
 
       <Switch>
-        <Route path={`/figure/${figure}/${color}`}>
-          {console.log(figure)}
+        <Route path={`/figure/:id`}>
           <Figure name={figure} style={color} />
         </Route>
       </Switch>
