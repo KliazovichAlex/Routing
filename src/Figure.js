@@ -2,12 +2,17 @@ import React from "react";
 import { useParams } from "react-router-dom";
 
 export const Figure = (props) => {
+  let { id } = useParams();
+  let { color } = useParams();
+  console.log(color);
+  console.log(id);
+
   let boxColor = {
-    backgroundColor: `${props.style}`,
+    backgroundColor: `${color}`,
   };
   return (
-    <div className={`figure${props.name}`} style={boxColor}>
-      <h1>{props.name === 1 ? "Square" : "Circle"}</h1>
+    <div className={`figure${id}`} style={boxColor}>
+      <h1>{id === "1" ? "Square" : "Circle"}</h1>
     </div>
   );
 };

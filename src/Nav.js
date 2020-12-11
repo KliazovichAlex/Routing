@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Figure } from "./Figure";
 export const Nav = () => {
-  const [figure, setFigure] = useState(0);
-  const [color, setColor] = useState("");
+  const [figure, setFigure] = useState(1);
+  const [color, setColor] = useState("red");
   const fig1 = () => {
     setFigure(1);
   };
@@ -59,10 +60,9 @@ export const Nav = () => {
           </ul>
         </div>
       </div>
-
       <Switch>
-        <Route path={`/figure/:id`}>
-          <Figure name={figure} style={color} />
+        <Route path={`/figure/:id/:color`}>
+          <Figure />
         </Route>
       </Switch>
     </Router>
